@@ -1,12 +1,12 @@
 export type SocialLink = {
     label: string;
     url: string;
-}
+};
 
 export type Photo = {
     src: string;
     alt: string;
-}
+};
 
 export type AboutMe = {
     name: string;
@@ -18,7 +18,7 @@ export type AboutMe = {
     interests: string[];
     currentlyWorkingOn: string[];
     socials: SocialLink[];
-}
+};
 
 export const aboutMe: AboutMe = {
     name: "Ryan Vu",
@@ -31,7 +31,7 @@ export const aboutMe: AboutMe = {
         alt: "",
     },
     interests: [
-        "machine learning", 
+        "machine learning",
         "backend development",
         "mobile development",
         "research",
@@ -41,11 +41,7 @@ export const aboutMe: AboutMe = {
         "montreal canadiens",
         "sneakers",
     ],
-    currentlyWorkingOn: [
-        "",
-        "",
-        "",
-    ],
+    currentlyWorkingOn: ["", "", ""],
     socials: [
         {
             label: "GitHub",
@@ -56,4 +52,4 @@ export const aboutMe: AboutMe = {
             url: "https://www.linkedin.com/in/ryan-vu-3305442ba/",
         },
     ],
-}
+};

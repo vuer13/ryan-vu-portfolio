@@ -6,7 +6,7 @@ export type Education = {
     endDate?: string;
     relevantCoursework?: string[];
     activities?: string[];
-}
+};
 
 export const education: Education[] = [
     {
@@ -15,14 +15,7 @@ export const education: Education[] = [
         location: "Vancouver, BC",
         startDate: "Sept. 2023",
         endDate: "May 2028",
-        relevantCoursework: [
-            "",
-            "",
-            "",
-        ],
-        activities: [
-            "",
-            "",
-        ],
+        relevantCoursework: ["", "", ""],
+        activities: ["", ""],
     },
-]
+];

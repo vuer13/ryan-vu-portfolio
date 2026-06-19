@@ -1,9 +1,9 @@
-export type ExperienceType = "Work" | "Internship" | "Volunteer"
+export type ExperienceType = "Work" | "Internship" | "Volunteer";
 
 export type Photo = {
     src: string;
     alt: string;
-}
+};
 
 export type Experience = {
     role: string;
@@ -16,7 +16,7 @@ export type Experience = {
     highlights?: string[];
     tech?: string[];
     logo?: Photo;
-}
+};
 
 export const experiences: Experience[] = [
     {
@@ -27,11 +27,7 @@ export const experiences: Experience[] = [
         endDate: "Aug. 2026",
         type: "Internship",
         description: "",
-        highlights: [
-            "",
-            "",
-            "",
-        ],
+        highlights: ["", "", ""],
         tech: [],
     },
     {
@@ -50,11 +46,7 @@ export const experiences: Experience[] = [
         endDate: "May 2026",
         type: "Volunteer",
         description: "",
-        highlights: [
-            "",
-            "",
-            "",
-        ],
+        highlights: ["", "", ""],
         tech: [],
     },
     {
@@ -64,11 +56,7 @@ export const experiences: Experience[] = [
         startDate: "Sept. 2023",
         type: "Volunteer",
         description: "",
-        highlights: [
-            "",
-            "",
-            "",
-        ],
+        highlights: ["", "", ""],
         tech: [],
     },
     {
@@ -79,11 +67,7 @@ export const experiences: Experience[] = [
         endDate: "Dec. 2024",
         type: "Work",
         description: "",
-        highlights: [
-            "",
-            "",
-            "",
-        ],
+        highlights: ["", "", ""],
         tech: [],
     },
     {
@@ -93,11 +77,7 @@ export const experiences: Experience[] = [
         startDate: "Jul. 2024",
         type: "Work",
         description: "",
-        highlights: [
-            "",
-            "",
-            "",
-        ],
+        highlights: ["", "", ""],
     },
     {
         role: "Lifeguard/Swim Instructor",
@@ -107,11 +87,7 @@ export const experiences: Experience[] = [
         endDate: "Jul. 2024",
         type: "Work",
         description: "",
-        highlights: [
-            "",
-            "",
-            "",
-        ],
+        highlights: ["", "", ""],
     },
     {
         role: "Stats Undergraduate TA",
@@ -121,4 +97,4 @@ export const experiences: Experience[] = [
         type: "Work",
         description: "Incoming for September 2026",
     },
-]
+];
