@@ -25,12 +25,22 @@ export const aboutMe: AboutMe = {
     headline: "Computer Science and Statistics student at UBC",
     location: "Vancouver, BC",
     bio: "",
-    whoAmI: [],
+    whoAmI: ["developer", "researcher", "creator", "who loves to have fun!"],
     photo: {
         src: "",
         alt: "",
     },
-    interests: [],
+    interests: [
+        "machine learning", 
+        "backend development",
+        "mobile development",
+        "research",
+        "artifical intelligence",
+        "computer vision",
+        "volleyball",
+        "montreal canadiens",
+        "sneakers",
+    ],
     currentlyWorkingOn: [
         "",
         "",
@@ -39,11 +49,11 @@ export const aboutMe: AboutMe = {
     socials: [
         {
             label: "GitHub",
-            url: "",
+            url: "https://github.com/vuer13",
         },
         {
             label: "LinkedIn",
-            url: "",
+            url: "https://www.linkedin.com/in/ryan-vu-3305442ba/",
         },
     ],
 }
