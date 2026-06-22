@@ -1,8 +1,8 @@
 const navLinks = [
-    { label: "Experience", href: "#experience" },
-    { label: "Projects", href: "#projects" },
-    { label: "Contact", href: "#contact" },
-    { label: "More Me", href: "#more" },
+    { label: "Experience", href: "/experience" },
+    { label: "Projects", href: "/projects" },
+    { label: "Contact", href: "/contact" },
+    { label: "More Me", href: "/more" },
 ];
 
 export default function Navbar() {
