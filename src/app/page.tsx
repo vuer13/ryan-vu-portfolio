@@ -1,9 +1,9 @@
-import Hero from "../components/Hero";
+import HomeIntro from "../components/HomeIntro";
 
 export default function Home() {
     return (
-        <main className="min-h-screen bg-slate-950 text-white">
-            <Hero />
+        <main className="min-h-screen bg-background text-foreground">
+            <HomeIntro />
         </main>
     );
 }
