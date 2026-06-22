@@ -4,7 +4,7 @@ import WhoAmI from "./WhoAmI";
 export default function HomeIntro() {
     const visibleCurrentWork = aboutMe.currentlyWorkingOn.filter(Boolean);
     // Social media links are temporary until I import all photos
-    
+
     return (
         <section className="mx-auto flex min-h-[calc(100vh-73px)] max-w-7xl flex-col justify-center px-6 py-20">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-primary">
