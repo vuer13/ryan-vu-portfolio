@@ -25,7 +25,7 @@ export const aboutMe: AboutMe = {
     headline: "Computer Science and Statistics student at UBC",
     location: "Vancouver, BC",
     bio: "",
-    whoAmI: ["creator", "developer"],
+    whoAmI: ["creator", "innovator", "developer"],
     photo: {
         src: "",
         alt: "",
