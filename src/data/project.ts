@@ -8,7 +8,7 @@ export type Photo = {
 export type Project = {
     title: string;
     description: string;
-    image?: Photo,
+    image?: Photo;
     tech: string[];
     github?: string;
     demo?: string;
@@ -36,10 +36,7 @@ export const projects: Project[] = [
         ],
         github: "https://github.com/vuer13/hockey-card-pricer",
         highlights: "",
-        category: [
-            "Full Stack Development",
-            "Mobile Development",
-        ],
+        category: ["Full Stack Development", "Mobile Development"],
         status: "Ongoing",
     },
     {

@@ -112,14 +112,14 @@ function ExperienceCard({
 }) {
     return (
         <div
-            className={`rounded-3xl border border-border bg-card p-6 shadow-sm transition duration-300 group-hover:-translate-y-1 group-hover:border-primary group-focus:-translate-y-1 group-focus:border-primary group-focus:outline-none ${align === "right" ? "md:text-right" : "md:text-left"
-                }`}
+            className={`rounded-3xl border border-border bg-card p-6 shadow-sm transition duration-300 group-hover:-translate-y-1 group-hover:border-primary group-focus:-translate-y-1 group-focus:border-primary group-focus:outline-none ${
+                align === "right" ? "md:text-right" : "md:text-left"
+            }`}
         >
             <div
-                className={`flex flex-col gap-4 ${align === "right"
-                    ? "md:items-end"
-                    : "md:items-start"
-                    }`}
+                className={`flex flex-col gap-4 ${
+                    align === "right" ? "md:items-end" : "md:items-start"
+                }`}
             >
                 <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-border bg-background text-xs font-semibold text-muted">
                     {experience.logo?.src ? (
@@ -137,10 +137,11 @@ function ExperienceCard({
 
                 <div>
                     <div
-                        className={`flex flex-wrap items-center gap-3 ${align === "right"
-                            ? "md:justify-end"
-                            : "md:justify-start"
-                            }`}
+                        className={`flex flex-wrap items-center gap-3 ${
+                            align === "right"
+                                ? "md:justify-end"
+                                : "md:justify-start"
+                        }`}
                     >
                         <h2 className="text-2xl font-bold text-foreground">
                             {experience.organization}
@@ -161,9 +162,7 @@ function ExperienceCard({
 
                     <p className="mt-1 text-sm font-semibold text-muted">
                         {experience.startDate}
-                        {experience.endDate
-                            ? ` — ${experience.endDate}`
-                            : ""}
+                        {experience.endDate ? ` — ${experience.endDate}` : ""}
                     </p>
 
                     {experience.location && (
@@ -189,10 +188,11 @@ function ExperienceCard({
                                 .map((highlight) => (
                                     <li
                                         key={highlight}
-                                        className={`flex gap-3 ${align === "right"
-                                            ? "md:justify-end"
-                                            : ""
-                                            }`}
+                                        className={`flex gap-3 ${
+                                            align === "right"
+                                                ? "md:justify-end"
+                                                : ""
+                                        }`}
                                     >
                                         <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent" />
                                         <span>{highlight}</span>
@@ -203,8 +203,9 @@ function ExperienceCard({
 
                 {experience.tech && experience.tech.length > 0 && (
                     <div
-                        className={`mt-5 flex flex-wrap gap-2 ${align === "right" ? "md:justify-end" : ""
-                            }`}
+                        className={`mt-5 flex flex-wrap gap-2 ${
+                            align === "right" ? "md:justify-end" : ""
+                        }`}
                     >
                         {experience.tech.map((tech) => (
                             <span

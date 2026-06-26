@@ -29,7 +29,9 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
         const uniqueCategories = new Set<string>();
 
         projects.forEach((project) => {
-            project.category.forEach((category) => uniqueCategories.add(category));
+            project.category.forEach((category) =>
+                uniqueCategories.add(category),
+            );
         });
 
         return ["All", ...Array.from(uniqueCategories).sort()];
@@ -79,7 +81,9 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
 
                 <select
                     value={selectedCategory}
-                    onChange={(event) => setSelectedCategory(event.target.value)}
+                    onChange={(event) =>
+                        setSelectedCategory(event.target.value)
+                    }
                     className="rounded-2xl border border-border bg-card px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
                 >
                     {categories.map((category) => (

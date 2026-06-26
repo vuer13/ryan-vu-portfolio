@@ -14,11 +14,13 @@ export default function ExperiencePage() {
                 </h1>
 
                 <p className="mt-5 text-base leading-8 text-primary sm:text-2xl">
-                    A timeline of roles where I have built software, worked with teams, supported users, and developed technical skills.
+                    A timeline of roles where I have built software, worked with
+                    teams, supported users, and developed technical skills.
                 </p>
 
                 <p className="text-sm leading-7 text-muted">
-                    Select or hover over an experience card to view more details, including highlights, technologies, and links.
+                    Select or hover over an experience card to view more
+                    details, including highlights, technologies, and links.
                 </p>
             </div>
 

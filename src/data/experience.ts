@@ -15,7 +15,7 @@ export type Experience = {
     description: string;
     highlights?: string[];
     tech?: string[];
-    link?: string,
+    link?: string;
     logo?: Photo;
 };
 
