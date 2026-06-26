@@ -10,7 +10,7 @@ export default function Navbar() {
         <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur">
             <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
                 <a
-                    href="#"
+                    href="/"
                     className="text-lg font-bold text-accent transition hover:text-hover"
                 >
                     Ryan Vu
