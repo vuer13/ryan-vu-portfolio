@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import type { Project } from "../data/project";
 
@@ -113,9 +114,11 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
                     >
                         <div className="flex h-28 w-28 flex-none items-center justify-center rounded-2xl border border-border bg-background text-sm font-semibold text-muted">
                             {project.image ? (
-                                <img
+                                <Image
                                     src={project.image.src}
                                     alt={project.image.alt}
+                                    width={112}
+                                    height={112}
                                     className="h-full w-full rounded-2xl object-cover"
                                 />
                             ) : (

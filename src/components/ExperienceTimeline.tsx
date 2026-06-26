@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Experience } from "../data/experience";
 
 type ExperienceTimelineProps = {
@@ -122,9 +123,11 @@ function ExperienceCard({
             >
                 <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-border bg-background text-xs font-semibold text-muted">
                     {experience.logo?.src ? (
-                        <img
+                        <Image
                             src={experience.logo.src}
                             alt={experience.logo.alt}
+                            width={64}
+                            height={64}
                             className="h-full w-full rounded-2xl object-cover"
                         />
                     ) : (

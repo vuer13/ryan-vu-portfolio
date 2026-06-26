@@ -12,7 +12,7 @@ export default function NotFound() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-muted sm:text-2xl">
-                Looks like this page does not exist yet. Maybe it got traded, benched, or didn't made the cut.
+                Looks like this page does not exist yet. Maybe it got traded, benched, or did not made the cut.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
