@@ -1,8 +1,14 @@
 export type Status = "Completed" | "Ongoing";
 
+export type Photo = {
+    src: string;
+    alt: string;
+};
+
 export type Project = {
     title: string;
     description: string;
+    image?: Photo,
     tech: string[];
     github?: string;
     demo?: string;
