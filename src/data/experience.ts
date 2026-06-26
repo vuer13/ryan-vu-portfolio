@@ -15,6 +15,7 @@ export type Experience = {
     description: string;
     highlights?: string[];
     tech?: string[];
+    link?: string,
     logo?: Photo;
 };
 
@@ -42,7 +43,7 @@ export const experiences: Experience[] = [
         role: "Software Developer",
         organization: "UBC Data Science Club",
         location: "Remote (Vancouver, BC)",
-        startDate: "Oct. 2026",
+        startDate: "Oct. 2025",
         endDate: "May 2026",
         type: "Volunteer",
         description: "",
