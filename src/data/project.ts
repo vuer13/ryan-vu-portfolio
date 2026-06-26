@@ -39,7 +39,6 @@ export const projects: Project[] = [
         category: [
             "Full Stack Development",
             "Mobile Development",
-            "Computer Vision (ML)",
         ],
         status: "Ongoing",
     },
