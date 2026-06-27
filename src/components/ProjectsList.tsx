@@ -137,7 +137,7 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
                                         {project.title}
                                     </h2>
 
-                                    <p className="mt-3 text-sm leading-7 text-muted">
+                                    <p className="mt-1 text-md leading-7 text-primary">
                                         {project.description}
                                     </p>
                                 </div>
@@ -168,7 +168,7 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
                                 {project.category.map((category) => (
                                     <span
                                         key={category}
-                                        className="text-xs font-semibold uppercase tracking-wide text-muted"
+                                        className="text-xs font-semibold uppercase tracking-wide text-accent"
                                     >
                                         {category}
                                     </span>
