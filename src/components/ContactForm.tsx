@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-type FormStatus = "idle" | "loading" | "success" | "error"
+type FormStatus = "idle" | "loading" | "success" | "error";
 
 export default function ContactForm() {
     const [status, setStatus] = useState<FormStatus>("idle");
@@ -46,7 +46,6 @@ export default function ContactForm() {
                 setStatus("success");
             }}
         >
-
             <div>
                 <label
                     htmlFor="name"
@@ -113,9 +112,7 @@ export default function ContactForm() {
             )}
 
             {status === "error" && (
-                <p className="text-sm font-medium text-accent">
-                    {error}
-                </p>
+                <p className="text-sm font-medium text-accent">{error}</p>
             )}
         </form>
     );
