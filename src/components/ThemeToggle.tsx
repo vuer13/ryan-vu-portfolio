@@ -1,8 +1,12 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
-export default function ThemeToggle() {
+type ThemeToggleProps = {
+    className?: string;
+};
+
+export default function ThemeToggle({ className = "" }: ThemeToggleProps) {
     const [isDark, setIsDark] = useState(false);
 
     useEffect(() => {
@@ -32,7 +36,7 @@ export default function ThemeToggle() {
         <button
             type="button"
             onClick={toggleTheme}
-            className="rounded-full border border-border px-4 py-2 text-sm font-semibold text-primary transition hover:border-foreground hover:text-foreground"
+            className={`rounded-full border border-border px-4 py-2 text-sm font-semibold text-primary transition hover:border-foreground hover:text-foreground ${className}`}
         >
             {isDark ? "Light" : "Dark"}
         </button>

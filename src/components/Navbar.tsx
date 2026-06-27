@@ -29,7 +29,7 @@ export default function Navbar() {
                             {link.label}
                         </Link>
                     ))}
-                    <ThemeToggle />
+                    <ThemeToggle className="ml-10" />
                 </div>
             </nav>
         </header>
