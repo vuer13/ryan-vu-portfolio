@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
     { label: "Experience", href: "/experience" },
@@ -28,6 +29,7 @@ export default function Navbar() {
                             {link.label}
                         </Link>
                     ))}
+                    <ThemeToggle />
                 </div>
             </nav>
         </header>
