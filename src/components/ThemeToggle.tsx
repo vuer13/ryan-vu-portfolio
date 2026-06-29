@@ -6,36 +6,29 @@ type ThemeToggleProps = {
     className?: string;
 };
 
+function getSavedTheme() {
+    if (typeof window === "undefined") {
+        return false;
+    }
+
+    return localStorage.getItem("theme") === "dark";
+}
+
 export default function ThemeToggle({ className = "" }: ThemeToggleProps) {
-    const [isDark, setIsDark] = useState(false);
+    const [isDark, setIsDark] = useState(getSavedTheme);
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem("theme");
-
-        if (savedTheme === "dark") {
-            document.documentElement.classList.add("dark");
-            setIsDark(true);
-        }
-    }, []);
-
-    function toggleTheme() {
-        const nextIsDark = !isDark;
-
-        setIsDark(nextIsDark);
-
-        if (nextIsDark) {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-        }
-    }
+        document.documentElement.classList.toggle("dark", isDark);
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    }, [isDark]);
 
     return (
         <button
             type="button"
-            onClick={toggleTheme}
+            onClick={() => {
+                setIsDark((current) => !current);
+            }}
+            suppressHydrationWarning
             className={`rounded-full border border-border px-4 py-2 text-sm font-semibold text-primary transition hover:border-foreground hover:text-foreground ${className}`}
         >
             {isDark ? "Light" : "Dark"}
