@@ -57,7 +57,7 @@ export const travelPlaces: TravelPlace[] = [
         position: {
             left: "50%",
             top: "45%",
-        }
+        },
     },
     {
         id: "vietnam-3",
@@ -67,7 +67,7 @@ export const travelPlaces: TravelPlace[] = [
         position: {
             left: "50%",
             top: "45%",
-        }
+        },
     },
     {
         id: "us-1",
@@ -157,7 +157,8 @@ export const moreMeSections: MoreMeSection[] = [
             {
                 label: "Tech Interests",
                 value: "Machine learning, computer vision, and backend development",
-                description: "I really enjoy learning about machine learning and computer vision, and I hope to work in this field in some way in the future. ",
+                description:
+                    "I really enjoy learning about machine learning and computer vision, and I hope to work in this field in some way in the future. ",
                 tags: ["Tech", "AI", "Software"],
             },
             {

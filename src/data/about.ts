@@ -38,7 +38,11 @@ export const aboutMe: AboutMe = {
         "artifical intelligence",
         "computer vision",
     ],
-    currentlyWorkingOn: ["transformer: gpt", "hockey card pricer", "uthreads implementation"],
+    currentlyWorkingOn: [
+        "transformer: gpt",
+        "hockey card pricer",
+        "uthreads implementation",
+    ],
     socials: [
         {
             label: "GitHub",
