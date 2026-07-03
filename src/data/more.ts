@@ -40,9 +40,9 @@ export const travelPlaces: TravelPlace[] = [
         },
     },
     {
-        id: "travel-placeholder-1",
-        city: "Add place",
-        country: "Add country",
+        id: "vietnam-1",
+        city: "Ho Chi Minh City",
+        country: "Vietnam",
         description: "Add a short memory or note.",
         position: {
             left: "50%",
@@ -50,9 +50,49 @@ export const travelPlaces: TravelPlace[] = [
         },
     },
     {
-        id: "travel-placeholder-2",
-        city: "Add place",
-        country: "Add country",
+        id: "vietnam-2",
+        city: "Hai Phong",
+        country: "Vietnam",
+        description: "Add a short memory or note.",
+        position: {
+            left: "50%",
+            top: "45%",
+        }
+    },
+    {
+        id: "vietnam-3",
+        city: "Ha Noi",
+        country: "Vietnam",
+        description: "Add a short memory or note.",
+        position: {
+            left: "50%",
+            top: "45%",
+        }
+    },
+    {
+        id: "us-1",
+        city: "Seattle",
+        country: "United States",
+        description: "Add a short memory or note.",
+        position: {
+            left: "72%",
+            top: "52%",
+        },
+    },
+    {
+        id: "us-2",
+        city: "Honolulu",
+        country: "United States",
+        description: "Add a short memory or note.",
+        position: {
+            left: "72%",
+            top: "52%",
+        },
+    },
+    {
+        id: "us-3",
+        city: "Kona Island",
+        country: "United States",
         description: "Add a short memory or note.",
         position: {
             left: "72%",
@@ -69,25 +109,31 @@ export const moreMeSections: MoreMeSection[] = [
             {
                 label: "Favorite Hockey Team",
                 value: "Montreal Canadiens",
-                description: "Habs fan through the highs and lows.",
+                description: "Habs fan since 2013, through the highs and lows.",
                 tags: ["NHL", "Hockey"],
             },
             {
                 label: "Favorite Basketball Player",
-                value: "",
-                description: "",
+                value: "Lebron James",
+                description: "The GOAT",
+                tags: ["NBA", "Basketball"],
+            },
+            {
+                label: "Favorite Basketball Player",
+                value: "Steph Curry",
+                description: "He wasn't so bad after Lebron left Cleveland",
                 tags: ["NBA", "Basketball"],
             },
             {
                 label: "Favorite Baseball Team",
-                value: "",
-                description: "",
+                value: "Los Angeles Dodgers",
+                description: "Fan since 2017, so not a bandwagon fan.",
                 tags: ["MLB", "Baseball"],
             },
             {
                 label: "Favorite Sport to Play",
                 value: "Volleyball",
-                description: "",
+                description: "Since 6th grade, but now on 2 broken knees",
                 tags: ["Volleyball"],
             },
         ],
@@ -98,21 +144,9 @@ export const moreMeSections: MoreMeSection[] = [
         items: [
             {
                 label: "Sneakers I Want",
-                value: "",
-                description: "",
+                value: "Jordan 11 Jubliee",
+                description: "My dream shoe",
                 tags: ["Sneakers"],
-            },
-            {
-                label: "Favorite Brand",
-                value: "",
-                description: "",
-                tags: ["Fashion"],
-            },
-            {
-                label: "Current Style Interest",
-                value: "",
-                description: "",
-                tags: ["Style"],
             },
         ],
     },
@@ -123,13 +157,12 @@ export const moreMeSections: MoreMeSection[] = [
             {
                 label: "Tech Interests",
                 value: "Machine learning, computer vision, and backend development",
-                description: "",
+                description: "I really enjoy learning about machine learning and computer vision, and I hope to work in this field in some way in the future. ",
                 tags: ["Tech", "AI", "Software"],
             },
             {
                 label: "Other Interests",
                 value: "Sneakers, sports, music, and building cool things",
-                description: "",
                 tags: ["Fun"],
             },
         ],
