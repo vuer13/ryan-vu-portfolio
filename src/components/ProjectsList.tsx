@@ -116,20 +116,6 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
                         key={project.title}
                         className="flex flex-col gap-5 rounded-3xl border border-border bg-card p-5 transition hover:border-primary md:flex-row"
                     >
-                        <div className="flex h-28 w-28 flex-none items-center justify-center rounded-2xl border border-border bg-background text-sm font-semibold text-muted">
-                            {project.image ? (
-                                <Image
-                                    src={project.image.src}
-                                    alt={project.image.alt}
-                                    width={112}
-                                    height={112}
-                                    className="h-full w-full rounded-2xl object-cover"
-                                />
-                            ) : (
-                                <span>Image</span>
-                            )}
-                        </div>
-
                         <div className="flex-1">
                             <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-start">
                                 <div>

@@ -1,18 +1,11 @@
 export type Status = "Completed" | "Ongoing";
 
-export type Photo = {
-    src: string;
-    alt: string;
-};
-
 export type Project = {
     title: string;
     description: string;
-    image?: Photo;
     tech: string[];
     github?: string;
     demo?: string;
-    highlights: string;
     category: string[];
     status: Status;
 };
@@ -35,7 +28,6 @@ export const projects: Project[] = [
             "CI",
         ],
         github: "https://github.com/vuer13/hockey-card-pricer",
-        highlights: "",
         category: ["Full Stack Development", "Mobile Development"],
         status: "Ongoing",
     },
@@ -44,8 +36,7 @@ export const projects: Project[] = [
         description:
             "A machine learning project that predicts NHL player point production using historical player statistics and regression models.",
         tech: ["Python", "Jupyter Notebook", "scikit-learn", "pandas"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/nhl-player-predictor",
         category: ["Date Engineering", "ML"],
         status: "Completed",
     },
@@ -54,8 +45,7 @@ export const projects: Project[] = [
         description:
             "A deep learning object detection model trained to locate hockey cards in images using Faster R-CNN.",
         tech: ["Python", "PyTorch"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/FasterRCNN-HockeyCardSegmentation",
         category: ["Computer Vision", "Deep Learning"],
         status: "Completed",
     },
@@ -64,8 +54,7 @@ export const projects: Project[] = [
         description:
             "A convolutional neural network for classifying retinal disease from medical eye images.",
         tech: ["Python", "Tensorflow"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/retina-disease-cnn",
         category: ["Computer Vision", "Deep Learning"],
         status: "Completed",
     },
@@ -74,8 +63,7 @@ export const projects: Project[] = [
         description:
             "A full-stack journaling app that lets users write entries, store them securely, and generate AI-powered reflections.",
         tech: ["React", "Express.js", "Node.js", "Mongo", "JavaScript"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/Journal-Daily",
         category: ["Full Stack", "Web Development"],
         status: "Completed",
     },
@@ -84,8 +72,7 @@ export const projects: Project[] = [
         description:
             "A Chrome extension designed to improve webpage accessibility and readability for users with visual difficulties.",
         tech: ["JavaScript", "HTML", "CSS"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/vision-aid",
         category: ["Chrome Extension"],
         status: "Completed",
     },
@@ -94,8 +81,7 @@ export const projects: Project[] = [
         description:
             "A database-backed web application for managing farm, crop, customer, and transaction data.",
         tech: ["Oracle RDBMS", "JavaScript", "SQL", "Node.js", "Express.js"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/Farmer_Database_Management",
         category: ["Database", "Web Development", "Full Stack Development"],
         status: "Completed",
     },
@@ -104,8 +90,7 @@ export const projects: Project[] = [
         description:
             "A Java desktop application for tracking personal health information through a simple Swing-based interface.",
         tech: ["Java", "Java Swing"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/Health-Tracker",
         category: ["Software Construction"],
         status: "Completed",
     },
@@ -114,8 +99,7 @@ export const projects: Project[] = [
         description:
             "A low-level C systems project implementing user-level threading and cooperative scheduling.",
         tech: ["C"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/uthreads",
         category: ["Computer Systems"],
         status: "Ongoing",
     },
@@ -124,8 +108,7 @@ export const projects: Project[] = [
         description:
             "A GPT-style Transformer model implemented from scratch in PyTorch for next-token prediction.",
         tech: ["Python", "PyTorch", "JaxTyping"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/Transformer",
         category: ["Machine Learning"],
         status: "Ongoing",
     },
@@ -134,8 +117,7 @@ export const projects: Project[] = [
         description:
             "A machine learning and data analysis project using New York dataset features to clean, explore, and model real-world trends.",
         tech: ["Python", "pandas", "scikit-learn"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/CPSC330-HW5",
         category: ["Data Analysis", "Data Engineering", "Machine Learning"],
         status: "Completed",
     },
@@ -151,8 +133,7 @@ export const projects: Project[] = [
             "Gemini",
             "Eleven Labs",
         ],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/Stormhacks-FutureVent",
         category: ["Hackathon", "Full Stack Development", "Web Development"],
         status: "Completed",
     },
@@ -161,8 +142,7 @@ export const projects: Project[] = [
         description:
             "A Streamlit dashboard for visualizing stock performance and running Monte Carlo simulations for portfolio analysis.",
         tech: ["Python", "Streamlit"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/Health-Tracker",
         category: ["Monte Carlo", "Statistics"],
         status: "Completed",
     },
@@ -171,8 +151,7 @@ export const projects: Project[] = [
         description:
             "A C++ data structures project that manipulates image data using linked list-based representations.",
         tech: ["C++"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/LinkedLists-Photo",
         category: ["Data Structures and Algorithms"],
         status: "Completed",
     },
@@ -181,8 +160,7 @@ export const projects: Project[] = [
         description:
             "A C++ image processing project that uses a ternary tree structure to recursively represent and manipulate images.",
         tech: ["C++"],
-        github: "",
-        highlights: "",
+        github: "https://github.com/vuer13/TrenaryTree-Image",
         category: ["Data Structures and Algorithms"],
         status: "Completed",
     },

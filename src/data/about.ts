@@ -34,14 +34,15 @@ export const aboutMe: AboutMe = {
         "machine learning",
         "backend development",
         "mobile development",
-        "research",
+        "medical research",
         "artifical intelligence",
         "computer vision",
-        "volleyball",
-        "montreal canadiens",
-        "sneakers",
     ],
-    currentlyWorkingOn: ["", "", ""],
+    currentlyWorkingOn: [
+        "transformer: gpt",
+        "hockey card pricer",
+        "uthreads implementation",
+    ],
     socials: [
         {
             label: "GitHub",
