@@ -4,11 +4,14 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
+        "build": "next build",
+        "vercel-build": "next build",
         "typecheck": "tsc --noEmit",
         "lint": "eslint . --max-warnings=0",
         "format": "prettier . --write",
         "format:check": "prettier . --check",
-        "check": "npm run typecheck && npm run lint && npm run format:check"
+        "check": "npm run typecheck && npm run lint && npm run format:check",
+        "start": "next start"
     },
     "dependencies": {
         "form-data": "^4.0.6",
