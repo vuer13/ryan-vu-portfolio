@@ -13,7 +13,6 @@ export type Experience = {
     endDate?: string;
     type: ExperienceType;
     description: string;
-    highlights?: string[];
     tech?: string[];
     link?: string;
     logo?: Photo;
@@ -27,9 +26,23 @@ export const experiences: Experience[] = [
         startDate: "May 2026",
         endDate: "Aug. 2026",
         type: "Internship",
-        description: "",
-        highlights: ["", "", ""],
-        tech: [],
+        description:
+            "Improving mobile and backend scoring workflows while leading formula and metric algorithm development for a cardiac wellness application.",
+        tech: [
+            "React Native",
+            "Expo",
+            "TypeScript",
+            "Python",
+            "FastAPI",
+            "Firebase",
+            "Docker",
+            "GitHub Actions",
+        ],
+        link: "https://medico-supplies.com",
+        logo: {
+            src: "/logo/medico-supplies.png",
+            alt: "Medico Supplies Logo",
+        },
     },
     {
         role: "Agile Test Developer",
@@ -37,7 +50,13 @@ export const experiences: Experience[] = [
         location: "Vancouver, BC",
         startDate: "Sept. 2026",
         type: "Internship",
-        description: "Incoming @ SAP for Fall 2026, 8 months",
+        description:
+            "Incoming Agile Test Developer intern at SAP for an 8-month Fall 2026 term.",
+        link: "",
+        logo: {
+            src: "/logo/sap-logo.svg",
+            alt: "SAP logo",
+        },
     },
     {
         role: "Software Developer",
@@ -46,9 +65,25 @@ export const experiences: Experience[] = [
         startDate: "Oct. 2025",
         endDate: "May 2026",
         type: "Volunteer",
-        description: "",
-        highlights: ["", "", ""],
-        tech: [],
+        description:
+            "Built backend and computer vision workflows for Basketball Shot Optimizer, helping convert gameplay video into actionable shot analytics.",
+        tech: [
+            "Python",
+            "FastAPI",
+            "Scikit-learn",
+            "Pandas",
+            "NumPy",
+            "YOLO",
+            "OpenCV",
+            "Docker",
+            "GitHub Actions",
+            "Render",
+        ],
+        link: "https://www.sap.com/canada/index.html",
+        logo: {
+            src: "/logo/ubc-dsci.jpeg",
+            alt: "UBC DSCI Club logo",
+        },
     },
     {
         role: "Undergraduate Research Assistant",
@@ -56,9 +91,14 @@ export const experiences: Experience[] = [
         location: "Vancouver, BC",
         startDate: "Sept. 2023",
         type: "Volunteer",
-        description: "",
-        highlights: ["", "", ""],
-        tech: [],
+        description:
+            "Supporting PhD research through data processing, analysis tooling, and interactive visualization workflows.",
+        tech: ["Python", "Streamlit"],
+        link: "https://simpl.mech.ubc.ca",
+        logo: {
+            src: "/logo/ubc-logo.png",
+            alt: "UBC Logo",
+        },
     },
     {
         role: "Math Undergraduate TA",
@@ -67,9 +107,13 @@ export const experiences: Experience[] = [
         startDate: "Sept. 2024",
         endDate: "Dec. 2024",
         type: "Work",
-        description: "",
-        highlights: ["", "", ""],
-        tech: [],
+        description:
+            "Supported MATH 110 students by guiding tutorials, explaining course concepts, and helping with problem-solving strategies.",
+        link: "https://www.math.ubc.ca",
+        logo: {
+            src: "/logo/ubc-logo.png",
+            alt: "UBC Logo",
+        },
     },
     {
         role: "Optometric Assistant",
@@ -77,8 +121,13 @@ export const experiences: Experience[] = [
         location: "Vancouver, BC",
         startDate: "Jul. 2024",
         type: "Work",
-        description: "",
-        highlights: ["", "", ""],
+        description:
+            "Supported clinic operations through patient pre-testing, appointment coordination, front-desk service, and workflow assistance.",
+        link: "https://mountpleasantoptometry.com",
+        logo: {
+            src: "/logo/mpoc-logo.jpeg",
+            alt: "MPOC Logo",
+        },
     },
     {
         role: "Lifeguard/Swim Instructor",
@@ -87,8 +136,13 @@ export const experiences: Experience[] = [
         startDate: "Mar. 2023",
         endDate: "Jul. 2024",
         type: "Work",
-        description: "",
-        highlights: ["", "", ""],
+        description:
+            "Taught swimming lessons, supervised pool safety, and maintained a safe environment for swimmers of different skill levels.",
+        link: "https://jccgv.com/program-category/aquatics/",
+        logo: {
+            src: "/logo/jcc-logo.jpg",
+            alt: "JCC logo",
+        },
     },
     {
         role: "Stats Undergraduate TA",
@@ -96,6 +150,12 @@ export const experiences: Experience[] = [
         location: "Vancouver, BC",
         startDate: "Sept. 2026",
         type: "Work",
-        description: "Incoming for September 2026",
+        description:
+            "Incoming Statistics Undergraduate Teaching Assistant for the September 2026 academic term.",
+        link: "https://www.stat.ubc.ca",
+        logo: {
+            src: "/logo/ubc-logo.png",
+            alt: "UBC Logo",
+        },
     },
 ];

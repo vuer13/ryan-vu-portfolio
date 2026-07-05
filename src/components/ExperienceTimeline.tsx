@@ -121,17 +121,17 @@ function ExperienceCard({
                     align === "right" ? "md:items-end" : "md:items-start"
                 }`}
             >
-                <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-border bg-background text-xs font-semibold text-muted">
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-border bg-white p-2">
                     {experience.logo?.src ? (
                         <Image
                             src={experience.logo.src}
                             alt={experience.logo.alt}
                             width={64}
                             height={64}
-                            className="h-full w-full rounded-2xl object-cover"
+                            className="max-h-full max-w-full object-contain"
                         />
                     ) : (
-                        <span>Logo</span>
+                        <span>{experience.organization.charAt(0)}</span>
                     )}
                 </div>
 
@@ -179,27 +179,6 @@ function ExperienceCard({
                         {experience.description}
                     </p>
                 )}
-
-                {experience.highlights &&
-                    experience.highlights.filter(Boolean).length > 0 && (
-                        <ul className="mt-5 space-y-3 text-sm leading-7 text-muted">
-                            {experience.highlights
-                                .filter(Boolean)
-                                .map((highlight) => (
-                                    <li
-                                        key={highlight}
-                                        className={`flex gap-3 ${
-                                            align === "right"
-                                                ? "md:justify-end"
-                                                : ""
-                                        }`}
-                                    >
-                                        <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent" />
-                                        <span>{highlight}</span>
-                                    </li>
-                                ))}
-                        </ul>
-                    )}
 
                 {experience.tech && experience.tech.length > 0 && (
                     <div
