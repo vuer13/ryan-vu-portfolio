@@ -89,7 +89,7 @@ export const experiences: Experience[] = [
         role: "Undergraduate Research Assistant",
         organization: "SimPL Lab - UBC",
         location: "Vancouver, BC",
-        startDate: "Sept. 2023",
+        startDate: "Sept. 2025",
         type: "Volunteer",
         description:
             "Supporting PhD research through data processing, analysis tooling, and interactive visualization workflows.",
